@@ -1,0 +1,5 @@
+/vendor/
+/temp/*
+*.cache
+app/db.php
+/public/assets/images/upload
