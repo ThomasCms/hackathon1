@@ -1,0 +1,99 @@
+<header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand offset-5 acceuil" href="#">Accueil</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+                <li class="navbar-brand active">
+                    <a class="nav-link" href="#">BonbonDex<span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="navbar-brand active">
+                    <a class="nav-link" href="#">Map</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                    <a class="navbar-brand acceuil" href="#">Accueil</a>
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+                        <li class="navbar-brand active">
+                            <a class="nav-link" href="#">BonbonDex<span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="navbar-brand active">
+                            <a class="nav-link" href="#">Map</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+    </nav>
+</header>
+
+<section>
+    <div class="row largeur">
+
+        {#{% for article in article %}#}
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 m-b-35 block-article">
+            <div class="block2">
+                <div class="block2-pic hov-img0">
+                        <img src="https://via.placeholder.com/350x350" alt="Image de l'article {{ article.name }}" class="image-article" >
+                </div>
+                <div class="block2-txt flex-w flex-t p-t-14">
+                    <div class="block2-txt-child1 flex-col-l ">
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-dark center" data-toggle="modal" data-target="#exampleModal">
+                                Caramel
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <img class="offset-1" src="https://via.placeholder.com/350x350" alt="image du produit">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                            C'est bon les bonbons
+                                            </div>
+
+                                            <hr />
+
+                                            <div class="row">
+                                                Où me trouver ?
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-warning" data-dismiss="modal">J'y vais!</button>
+                                            <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    <p class="t-center">J'en ai un</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {#{% endfor %}#}
+    </div>
+
+    <div>
+        <h3>Les maisons autour de moi :</h3>
+    </div>
+</section>
