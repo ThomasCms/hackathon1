@@ -18,6 +18,24 @@ use Model\HackathonManager;
  */
 class HackathonController extends AbstractController
 {
+$client = new GuzzleHttp\Client([
+'base_uri' => 'https://foo.com/api/',
+]
+);
+
+// Send a request to https://foo.com/api/test
+$response = $client->request('GET', 'test');
+// or
+// Send request https://foo.com/api/test?key=maKey&name=toto
+$response = $client->request('GET', 'test', [
+'key'  => 'maKey',
+'name' => 'toto',
+]
+);
+
+//Afficher une response
+$body = $response->getBody();
+echo $body->getContents();
 
 
     /**
