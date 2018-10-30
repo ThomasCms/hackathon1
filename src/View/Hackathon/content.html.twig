@@ -2,7 +2,7 @@
     <div class="row largeur">
 
         {#{% for article in article %}#}
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 m-b-35 block-article">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 m-b-35 block-article" id="bonbonDex">
             <div class="block2">
                 <div class="block2-pic hov-img0">
                         <img src="https://via.placeholder.com/350x350" alt="Image de l'article {{ article.name }}" class="image-article" >
@@ -53,6 +53,6 @@
     </div>
 
     <div>
-        <h3>Les maisons autour de moi :</h3>
+        <h3 id="map">Les maisons autour de moi :</h3>
     </div>
 </section>
