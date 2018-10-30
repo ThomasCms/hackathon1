@@ -1,18 +1,18 @@
 <section>
     <div class="row largeur">
 
-        {#{% for article in article %}#}
+        {% for candy in candies %}
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 m-b-35 block-article" id="bonbonDex">
             <div class="block2">
                 <div class="block2-pic hov-img0">
-                        <img src="https://via.placeholder.com/350x350" alt="Image de l'article {{ article.name }}" class="image-article" >
+                        <img src="{{ candy.image_url }}" alt="Image de l'article {{ candy.product_name }}" class="image-article" >
                 </div>
                 <div class="block2-txt flex-w flex-t p-t-14">
                     <div class="block2-txt-child1 flex-col-l ">
 
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-dark center" data-toggle="modal" data-target="#exampleModal">
-                                Caramel
+                                {{ candy.product_name }}
                             </button>
 
                             <!-- Modal -->
@@ -20,7 +20,7 @@
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <img class="offset-1" src="https://via.placeholder.com/350x350" alt="image du produit">
+                                            <img class="offset-1" src="{{ candy.image_url }}" alt="image du produit">
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
@@ -49,7 +49,7 @@
             </div>
         </div>
 
-        {#{% endfor %}#}
+        {% endfor %}
     </div>
 
     <div>

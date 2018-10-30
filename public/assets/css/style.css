@@ -4,6 +4,7 @@
 
 body {
     background-color: #ff6e00;
+    padding-top:70px;
 }
 
 .nav-link:hover {
@@ -13,10 +14,6 @@ body {
 .navbar-brand:hover {
     color: orange !important;
 }
-
- header {
-     padding-bottom: 8vh;
- }
 
 .block-article{
     padding: 3vh;

@@ -35,6 +35,11 @@ foreach ($body["products"] as $i => $value) {
     echo $value["image_url"];
     echo $value["product_name"];
 }
+  
+  require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../app/db.php';
+require_once __DIR__ . '/../app/config.php';
+require_once __DIR__ . '/../app/dispatcher.php';
 ?>
 
 
@@ -45,3 +50,4 @@ foreach ($body["products"] as $i => $value) {
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
+
