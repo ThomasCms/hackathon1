@@ -96,3 +96,26 @@ footer{
 .remontes {
     margin-top: 5vh;
 }
+
+.home {
+    background-image: url("http://uneblondeennorvege.com/wp-content/uploads/2016/10/halloween1refleks-2-700x432.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.bottomcenter {
+    display: block;
+    margin : auto;
+}
+
+.homepadding {
+    padding-bottom: 75vh;
+    opacity: 0;
+}
+
+a:link
+{
+    text-decoration:none;
+}
