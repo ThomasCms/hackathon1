@@ -9,15 +9,7 @@ $client = new GuzzleHttp\Client([
 );
 $response = $client->request('GET', 'marshmallows.json');
 $body = $response->getBody()->getContents();
-json_decode($body, true);
-
-
-?>
-<pre><?php var_dump(json_decode($body)); ?></pre>
-<?php
-$chamallows = $body[categories];
-var_dump($chamallows);
-
+$body = json_decode($body, true);
 
 ?>
 <html lang="en">
@@ -37,6 +29,13 @@ var_dump($chamallows);
 <body>
 
 <h1>Hello, Candy !!!</h1>
+
+<?php
+foreach ($body["products"] as $i => $value) {
+    echo $value["image_url"];
+    echo $value["product_name"];
+}
+?>
 
 
 <!-- Optional JavaScript -->
