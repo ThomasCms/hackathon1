@@ -4,6 +4,7 @@
 
 body {
     background-color: #ff6e00;
+    padding-top:120px;
 }
 
 .nav-link:hover {
@@ -86,4 +87,13 @@ body {
 
 .btn-dark {
     color: #DBB500;
+}
+
+footer{
+    background-color: #373B43;
+    min-height: 5vh;
+}
+
+.remontes {
+    margin-top: 5vh;
 }

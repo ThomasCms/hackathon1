@@ -2,10 +2,18 @@
 
 {% block title %}CandyDex{% endblock %}
 
-{% block stylesheet %}{% include 'Hackathon/stylesheet.html.twig' %}{% endblock %}
+
+{% block header %}
+    {% include 'Hackathon/header.html.twig' %}
+{% endblock %}
 
 {% block content %}
     {% include 'Hackathon/content.html.twig' %}
+
+{% endblock %}
+
+{% block footer %}
+    {% include 'Hackathon/footer.html.twig' %}
 {% endblock %}
 
 {% block javascript %}
