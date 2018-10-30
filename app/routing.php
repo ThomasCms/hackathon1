@@ -10,7 +10,7 @@
  */
 
 $routes = [
-    'Item' => [ // Controller
+    'Hackathon' => [ // Controller
         ['index', '/', 'GET'], // action, url, method
         ['add', '/item/add', ['GET', 'POST']], // action, url, method
         ['edit', '/item/edit/{id:\d+}', ['GET', 'POST']], // action, url, method

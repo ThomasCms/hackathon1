@@ -12,7 +12,7 @@ namespace Model;
 /**
  *
  */
-class ItemManager extends AbstractManager
+class HackathonManager extends AbstractManager
 {
     /**
      *
@@ -29,10 +29,10 @@ class ItemManager extends AbstractManager
 
 
     /**
-     * @param Item $item
+     * @param Hackathon $item
      * @return int
      */
-    public function insert(Item $item): int
+    public function insert(Hackathon $item): int
     {
         // prepared request
         $statement = $this->pdo->prepare("INSERT INTO $this->table (`title`) VALUES (:title)");
@@ -58,10 +58,10 @@ class ItemManager extends AbstractManager
 
 
     /**
-     * @param Item $item
+     * @param Hackathon $item
      * @return int
      */
-    public function update(Item $item):int
+    public function update(Hackathon $item):int
     {
 
         // prepared request
