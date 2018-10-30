@@ -3,4 +3,4 @@
 *.cache
 app/db.php
 /public/assets/images/upload
-.idea/workspace.xml
+.idea/
