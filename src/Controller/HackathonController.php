@@ -9,14 +9,14 @@
 
 namespace Controller;
 
-use Model\Item;
-use Model\ItemManager;
+use Model\Hackathon;
+use Model\HackathonManager;
 
 /**
- * Class ItemController
+ * Class HackathonController
  *
  */
-class ItemController extends AbstractController
+class HackathonController extends AbstractController
 {
 
 
@@ -30,10 +30,10 @@ class ItemController extends AbstractController
      */
     public function index()
     {
-        $itemManager = new ItemManager($this->getPdo());
-        $items = $itemManager->selectAll();
+//        $itemManager = new HackathonManager($this->getPdo());
+//        $items = $itemManager->selectAll();
 
-        return $this->twig->render('Item/index.html.twig', ['items' => $items]);
+        return $this->twig->render('Hackathon/index.html.twig', ['items' => '']);
     }
 
 
@@ -48,10 +48,10 @@ class ItemController extends AbstractController
      */
     public function show(int $id)
     {
-        $itemManager = new ItemManager($this->getPdo());
+        $itemManager = new HackathonManager($this->getPdo());
         $item = $itemManager->selectOneById($id);
 
-        return $this->twig->render('Item/show.html.twig', ['item' => $item]);
+        return $this->twig->render('Hackathon/show.html.twig', ['item' => $item]);
     }
 
 
@@ -66,7 +66,7 @@ class ItemController extends AbstractController
      */
     public function edit(int $id): string
     {
-        $itemManager = new ItemManager($this->getPdo());
+        $itemManager = new HackathonManager($this->getPdo());
         $item = $itemManager->selectOneById($id);
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -74,7 +74,7 @@ class ItemController extends AbstractController
             $itemManager->update($item);
         }
 
-        return $this->twig->render('Item/edit.html.twig', ['item' => $item]);
+        return $this->twig->render('Hackathon/edit.html.twig', ['item' => $item]);
     }
 
 
@@ -90,14 +90,14 @@ class ItemController extends AbstractController
     {
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $itemManager = new ItemManager($this->getPdo());
-            $item = new Item();
+            $itemManager = new HackathonManager($this->getPdo());
+            $item = new Hackathon();
             $item->setTitle($_POST['title']);
             $id = $itemManager->insert($item);
             header('Location:/item/' . $id);
         }
 
-        return $this->twig->render('Item/add.html.twig');
+        return $this->twig->render('Hackathon/add.html.twig');
     }
 
 
@@ -108,7 +108,7 @@ class ItemController extends AbstractController
      */
     public function delete(int $id)
     {
-        $itemManager = new ItemManager($this->getPdo());
+        $itemManager = new HackathonManager($this->getPdo());
         $itemManager->delete($id);
         header('Location:/');
     }
