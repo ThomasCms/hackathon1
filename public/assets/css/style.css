@@ -87,3 +87,12 @@ body {
 .btn-dark {
     color: #DBB500;
 }
+
+footer{
+    background-color: #373B43;
+    min-height: 5vh;
+}
+
+.remontes {
+    margin-top: 5vh;
+}
