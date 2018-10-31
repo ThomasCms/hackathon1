@@ -121,3 +121,11 @@ a:link
     max-height: 400px;
     min-height: 400px;
 }
+
+.formcenter {
+    padding-left: 22vw;
+}
+
+footer {
+    width: 100vw;
+}
