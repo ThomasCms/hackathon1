@@ -28,7 +28,6 @@ class HackathonController extends AbstractController
 //        $items = $itemManager->selectAll();
         if(isset($_POST)){
             $this->positionDepart = $_POST['name'];
-            echo $this->positionDepart;
         }
         $client = new Client([
                 'base_uri' => 'https://fr.openfoodfacts.org/categorie/',
