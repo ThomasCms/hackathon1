@@ -26,7 +26,7 @@ class HackathonController extends AbstractController
     {
 //        $itemManager = new MarshmallowManager($this->getPdo());
 //        $items = $itemManager->selectAll();
-        if(isset($_POST)){
+        if(!empty($_POST)){
             $this->positionDepart = $_POST['name'];
         }
         $client = new Client([
