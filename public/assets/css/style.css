@@ -23,10 +23,6 @@ body {
     font-family: Creepster;
 }
 
-.map {
-
-}
-
 .nav-link:hover {
     color: orange !important;
 }
@@ -110,10 +106,6 @@ footer{
     min-height: 5vh;
 }
 
-.remontes {
-    margin-top: 5vh;
-}
-
 .home {
     background-image: url("http://uneblondeennorvege.com/wp-content/uploads/2016/10/halloween1refleks-2-700x432.jpg");
     background-repeat: no-repeat;
@@ -192,4 +184,13 @@ h2 {
 
 footer {
     width: 100vw;
+}
+
+.respmap {
+    width: 50vw;
+    height: 80vh;
+}
+
+.map {
+    padding-left: 0vw;
 }
