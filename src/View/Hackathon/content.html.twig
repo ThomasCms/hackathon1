@@ -51,9 +51,20 @@
 
         {% endfor %}
     </div>
+</section>
 
-    <div>
-        <h3 id="map">Les maisons autour de moi :</h3>
+<section id="map">
+    <div class="container formcenter p-tb-150 p-b-150">
+        <form method="post" action="" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="productName">Point de départ :</label>
+                        <input type="text" name="name" class="form-control" id="productName" value="toto" required>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
 </section>
 

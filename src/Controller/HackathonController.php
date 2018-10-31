@@ -13,7 +13,7 @@ use GuzzleHttp\ClientInterface;
 class HackathonController extends AbstractController
 {
 
-
+    private $positionDepart;
     /**
      * Display item listing
      *
@@ -26,6 +26,9 @@ class HackathonController extends AbstractController
     {
 //        $itemManager = new MarshmallowManager($this->getPdo());
 //        $items = $itemManager->selectAll();
+        if(isset($_POST)){
+            $this->positionDepart = $_POST['name'];
+        }
         $client = new Client([
                 'base_uri' => 'https://fr.openfoodfacts.org/categorie/',
             ]
@@ -35,6 +38,13 @@ class HackathonController extends AbstractController
         $candies = json_decode($body, true);
 
         return $this->twig->render('Hackathon/index.html.twig', ['candies' => $candies['products']]);
+    }
+
+    public function address()
+    {
+        //var_dump($_POST['name']);
+
+        //return $this->twig->render('Hackathon/content.html.twig', ['toto' => $_POST]);
     }
 }
 
