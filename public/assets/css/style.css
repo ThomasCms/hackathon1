@@ -194,3 +194,15 @@ footer {
 .map {
     padding-left: 0vw;
 }
+
+.mentions {
+    font-size: 35pt;
+}
+
+.mentions:hover {
+    color: red;
+}
+
+.gro {
+    font-size: 55pt;
+}
