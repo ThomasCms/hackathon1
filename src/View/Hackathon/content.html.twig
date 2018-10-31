@@ -11,12 +11,12 @@
                     <div class="block2-txt-child1 flex-col-l ">
 
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-dark center" data-toggle="modal" data-target="#exampleModal">
+                            <button type="button" class="btn btn-dark center" data-toggle="modal" data-target="#exampleModal{{ loop.index }}">
                                 {{ candy.product_name }}
                             </button>
 
                             <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="exampleModal{{ loop.index }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
