@@ -42,8 +42,6 @@ class HackathonController extends AbstractController
 
     public function address()
     {
-        //var_dump($_POST['name']);
-
         //return $this->twig->render('Hackathon/content.html.twig', ['toto' => $_POST]);
     }
 }
