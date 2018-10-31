@@ -116,3 +116,8 @@ a:link
 {
     text-decoration:none;
 }
+
+.image-article {
+    max-height: 400px;
+    min-height: 400px;
+}
