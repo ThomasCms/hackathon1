@@ -43,7 +43,7 @@ et découvrir l'utilisation des API
 * PHP 7
 
 ### Versioning
-* Git / Git Workflow
+* Git
 
 ### Outils
 * PhpStorm
