@@ -39,8 +39,10 @@ et découvrir l'utilisation des API
 ### Langages
 * HTML 5
 * CSS 3
-* Bootstrap 4
 * PHP 7
+
+### Frameworks
+* Bootstrap 4
 
 ### Versioning
 * Git
